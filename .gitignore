@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+/.vs/VSWorkspaceState.json
+/.vs/dashboard/FileContentIndex/047a9ba0-ee09-45b5-aedd-d9ec79c8413d.vsidx
+/.vs/dashboard/FileContentIndex/34c5cc33-7f97-4ee1-8902-d202dae5a2d4.vsidx
+/.vs/dashboard/v17/.wsuo
+/.vs/dashboard/v17/DocumentLayout.json
+/.vs/slnx.sqlite
+/.vs/dashboard/FileContentIndex/*.vsidx
