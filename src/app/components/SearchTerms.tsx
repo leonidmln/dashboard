@@ -32,7 +32,7 @@ export default function SearchTerms() {
             groupBy={(option: any) => option.title}
             getOptionLabel={(option: any) => option.value}
             sx={{ width: "auto", left: "100%" }}
-            renderInput={(params) => <TextField {...params} placeholder="Country, state, city, or mall" />}
+            renderInput={(params) => <TextField {...params} InputProps={{ ...params.InputProps, style: { height: 48, padding: "0 0 0 40px" } }} placeholder="Country, state, city, or mall" />}
         />
 
     );
