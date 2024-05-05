@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Header from "./components/header";
 import "./globals.css";
+import "./fonts.css";
+import "./dashboard.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,36 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div id="sw-page">
+          <Header />
+          <nav id="sw-nav" className="sw-level1">
+            <div id="wait" className="wait" style={{ "display": "none;" }}></div>
+            <div id="sw-navlevel2" className="hide">
+              <h2>PROJECTS</h2>
+              <ul className="sw-menu" id="sw-navsubmenu">
+                <li className=""><a className="sw-iconleft sw-close"><img src="/myprojects/static/media/14-projects.7e0b2ca4.svg" className="zz-iconwhite" style={{ "width": "14px", "height": "14px" }}><span>Summary</span></a></li>
+              </ul>
+            </div>
+            <div id="sw-navlevel1">
+              <ul className="sw-menu" id="sw-navmenu">
+                <li className=""><a className="sw-iconleft" href="/myprojects/dashboard"><img className="zz-iconwhite" src="/myprojects/static/media/20-dashboard.978a53f6.svg" alt="4URSpace DashBoard" /><span>DashBoard</span></a></li>
+                <li className=""><a className="sw-iconleft" href="/myprojects/projects"><img className="zz-iconwhite" src="/myprojects/static/media/20-projects.68c6bdfc.svg" alt="4URSpace My Projects" /><span>My Projects</span></a></li>
+                <li className=""><a className="sw-iconleft" href="/myprojects/todolist"><img className="zz-iconwhite" src="/myprojects/static/media/20-todo.af53f2c6.svg" alt="4URSpace To Do List" /><span>To Do List</span></a></li>
+                <li className=""><a className="sw-iconleft" href="/myprojects/messages"><img className="zz-iconwhite" src="/myprojects/static/media/20-messages.28c0463a.svg" alt="4URSpace Messages" /><span>Messages</span></a></li>
+                <li className=""><a className="sw-iconleft" href="/myprojects/mytasks"><img className="zz-iconwhite" src="/myprojects/static/media/20-tasks.e1734811.svg" alt="4URSpace My Tasks" /><span>My Tasks</span></a></li>
+                <li className=""><a className="sw-iconleft" href="/myprojects/mybids"><img className="zz-iconwhite" src="/myprojects/static/media/20-budget.89fd9ec4.svg" alt="4URSpace My Bids" /><span>My Bids</span></a></li>
+              </ul>
+              <ul className="sw-menu" id="sw-navsetup">
+                <li className="sw-hr"><a className="sw-iconleft" href="https://4urspace.com/retailprofile"><img className="zz-iconwhite" src="/myprojects/static/media/note.a07e3b2f.svg" alt="4URSpace Edit Profile" /><span>Edit Profile</span></a></li>
+                <li><a className="sw-iconleft" href="https://4urspace.com/retailer/Marian_Dumitrascu/0/0/0/0/12096"><img className="zz-iconwhite" src="/myprojects/static/media/20-info.7abf51f8.svg" alt="4URSpace View Profile" /><span>View Profile</span></a></li>
+                <li><a className="sw-iconleft" href="https://4urspace.com/team_management"><img className="zz-iconwhite" src="/myprojects/static/media/user.d6d5d6df.svg" alt="4URSpace Team Management" /><span>Team Management</span></a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        {children}
+      </body>
     </html>
   );
 }
