@@ -131,6 +131,79 @@
 }
 
 /* menu */
+#sw-navavatar {
+    padding: 0 0 30px 0;
+    transition: 0.3s;
+    width: 160px;
+}
+
+#sw-navavatar .sw-avatar {
+    height: 80px;
+    margin: 0 auto;
+    width: 80px;
+    transition: 0.3s;
+}
+
+#sw-navavatar p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+#sw-navsetup {
+    bottom: 15px;
+    left: 0;
+    position: absolute;
+}
+
+#sw-navsetup li#sw-navlogout {
+    /*display: none;*/
+}
+
+#sw-navlevel2 {
+    background: var(--nav-l);
+    box-sizing: border-box;
+    height: 100vh;
+    left: 40px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 110px 0 15px 0;
+    position: fixed;
+    top: 0;
+    transition: 0.3s;
+    width: 160px;
+    z-index: 7;
+}
+
+#sw-navlevel2 h2 {
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#sw-navlevel2 .sw-menu li.sw-current>a:before {
+    background: var(--nav-m);
+}
+
+#sw-page.sw-level2 #sw-nav {
+    padding-top: 110px;
+}
+
+#sw-page.sw-level2 #sw-nav #sw-navlevel1 {
+    width: 40px;
+}
+
+#sw-page.sw-level2 #sw-nav #sw-navavatar {
+    display: none;
+}
 
 .sw-menu {
     box-sizing: border-box;
