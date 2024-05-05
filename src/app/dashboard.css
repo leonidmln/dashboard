@@ -29,6 +29,11 @@
 
 }
 
+.star-0 {
+    width: 12px;
+    height: 12px;
+}
+
 #sw-headertitle img {
     padding: 25px 0 !important;
 }
@@ -403,6 +408,28 @@ a:hover .zz-iconbrand {
     #sw-navavatar {
         display: none !important;
     }
+}
+
+body {
+    background: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+#sw-page {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 100px 20px 100px 180px;
+    position: relative;
+}
+
+#sw-page.sw-level2 {
+    padding-left: 220px;
+}
+
+#sw-content #icontent {
+    background: transparent !important;
+    padding: 0 !important;
 }
 
 @media (max-width: 840px) {

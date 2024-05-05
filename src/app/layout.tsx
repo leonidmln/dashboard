@@ -5,7 +5,8 @@ import "./globals.css";
 import "./fonts.css";
 import "./dashboard.css";
 import "./idash.css";
-
+import "./icontent.css";
+import EmptyStars from "./components/EmptyStars"
 import NavigationMenu from "./components/navmenu";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -80,7 +81,7 @@ export default function RootLayout({
                       </div>
                       <div className="ii-2">
                         <h2 >PWI Construction, Inc.</h2>
-                        <span className="irate irate-s irate-50"></span><p>General Contractor</p>
+                        <EmptyStars />
                       </div>
                     </div>
                     <div className="ii-3"><p><strong>191</strong> projects</p></div>
@@ -89,7 +90,8 @@ export default function RootLayout({
                     <div>
                       <div className="ii-1 left"><a href="https://4urspace.com/vendor/11706"><img src="https://s3.amazonaws.com/4urspace-prod/company_profile/thumbnail/11706_1713965352_SYNERGYINSTALLERS.png" /></a></div>
                       <div className="ii-2"><h2 >SYNERGY INSTALLERS</h2>
-                        <span className="irate irate-s irate-0"></span><p>Equipment and Millwork installers</p>
+                        <EmptyStars />
+                        <p>Equipment and Millwork installers</p>
                       </div>
                     </div>
                     <div className="ii-3"><p><strong>16</strong> projects</p></div>
@@ -101,7 +103,7 @@ export default function RootLayout({
                       </div>
                       <div className="ii-2">
                         <h2 >Effebi s.p.a.</h2>
-                        <span className="irate irate-s irate-0"></span>
+                        <EmptyStars />
                         <p>Millwork Production &amp;amp; Installation</p>
                       </div>
                     </div>
@@ -114,7 +116,7 @@ export default function RootLayout({
                       </div>
                       <div className="ii-2">
                         <h2>Integra Fragrances</h2>
-                        <span className="irate irate-s irate-0"></span>
+                        <EmptyStars />
                         <p>Scent Branding Firm</p>
                       </div>
                     </div>
@@ -127,7 +129,7 @@ export default function RootLayout({
                       </div>
                       <div className="ii-2">
                         <h2>Bespoke7</h2>
-                        <span className="irate irate-s irate-0"></span>
+                        <EmptyStars />
                         <p>Millwork and Fixtures</p>
                       </div>
                     </div>
@@ -142,7 +144,7 @@ export default function RootLayout({
                       </div>
                       <div className="ii-2">
                         <h2>Axxys</h2>
-                        <span className="irate irate-s irate-0"></span>
+                        <EmptyStars />
                         <p>General Contractor</p>
                       </div>
                     </div>
@@ -154,7 +156,6 @@ export default function RootLayout({
             </div>
           </div>
         </div>
-        {children}
       </body>
     </html>
   );
