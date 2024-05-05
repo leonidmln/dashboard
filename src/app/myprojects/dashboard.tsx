@@ -29,16 +29,6 @@ export default function Dashboard() {
                         </div>
                         <div className="ifieldsearch"><label>I'm looking for:</label>
                             <FontAwesomeIcon icon={faMagnifyingGlass} color="#00a7e2" className="search-icon" />
-                            {/* <form>
-                                <div className="typeahead-container result hint backdrop">
-                                    <div className="typeahead-field">
-                                        <span className="typeahead-query" style={{ "position": "relative" }}>
-                                            <input placeholder="Country, state, city, or mall" defaultValue=""/>
-                                        </span>
-                                    </div>
-                                    <div className="typeahead-result"></div>
-                                </div>
-                            </form> */}
                             <SearchTerms />
                         </div>
                         <div className="idash-separate"></div>

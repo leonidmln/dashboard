@@ -2,6 +2,7 @@
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { ServerData } from "../StubData";
+import { RedirectType, redirect } from 'next/navigation';
 
 export default function SearchTerms() {
     const result: any = []
@@ -14,8 +15,17 @@ export default function SearchTerms() {
         })
     })
 
+    type Option = {
+        title: string;
+        value: string;
+    };
+    const searchTerm = (term: Option) => {
+        window.location.href = `https://4urspace.com/search/${term.title}/${term.value}`;
+    }
+
     return (
         <Autocomplete
+            onChange={(event, option) => searchTerm(option)}
             freeSolo
             id="grouped-demo"
             options={result}
