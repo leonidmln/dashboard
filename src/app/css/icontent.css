@@ -223,11 +223,9 @@
     width: 100%;
 }
 
-.ifieldsearch:before {
+.ifieldsearch .search-icon {
     color: #00a7e2;
-    content: "\f002";
     display: block;
-    font-family: "Font Awesome 5 Free";
     font-size: 24px;
     font-weight: 600;
     left: 0;
@@ -235,7 +233,8 @@
     position: absolute;
     text-align: center;
     top: 0;
-    width: 48px;
+    width: 24px;
+    margin: 12px;
 }
 
 /* BULLET */
