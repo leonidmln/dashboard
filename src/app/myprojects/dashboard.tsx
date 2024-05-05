@@ -1,24 +1,9 @@
-'use client'
 import EmptyStars from "../components/EmptyStars"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
-import TextField from '@mui/material/TextField';
-import Autocomplete from '@mui/material/Autocomplete';
-import { ServerData } from "../StubData";
+import SearchTerms from "../components/SearchTerms";
 
 export default function Dashboard() {
-    const result: any = []
-    const qq = [{title: "title", value:" value"}, {title: "title", value:" value2"}, {title: "11", value:"22"}, {title: "22", value:"33"}]
-     const q = ServerData.vendor_search.map((option: any) => {
-       option.data.forEach((subdata: any) => {
-            result.push( {
-                title: subdata.t,
-                value: subdata.v
-            })
-        })
-        
-    })
-
     return (
         <div className="icontent-tint" id="icontent">
             <div className="idash-content">
@@ -54,26 +39,8 @@ export default function Dashboard() {
                                     <div className="typeahead-result"></div>
                                 </div>
                             </form> */}
-                            <Autocomplete
-                            id="grouped-demo"
-                            options={result}
-                            groupBy={(option: any) => option.title}
-                            getOptionLabel={(option: any) => option.value}
-                            sx={{ width: "auto", left: "100%" }}
-                            renderInput={(params) => <TextField {...params} placeholder="Country, state, city, or mall" />}
-                        />
+                            <SearchTerms />
                         </div>
-
-                        
-                        {/* <Autocomplete
-                            id="grouped-demo"
-                            options={result}
-                            groupBy={(option: any) => option.title}
-                            getOptionLabel={(option: any) => option.value}
-                            sx={{ width: 300 }}
-                            renderInput={(params) => <TextField {...params} label="Country, state, city, or mall" />}
-                        /> */}
-
                         <div className="idash-separate"></div>
                         <div className="idash-spot ileft">
                             <div className="idash-colnote"><p>SHOWCASE</p></div>
