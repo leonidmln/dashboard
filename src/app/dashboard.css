@@ -355,7 +355,7 @@ a.sw-iconleft img {
 
 a.zz-iconbrand:hover,
 a:hover .zz-iconbrand {
-    color: var(--filter-l, filter: invert(35%) sepia(98%) saturate(743%) hue-rotate(166deg) brightness(101%) contrast(110%));
+    filter: var(--filter-l, invert(35%) sepia(98%) saturate(743%) hue-rotate(166deg) brightness(101%) contrast(110%));
 }
 
 @media (max-height: 720px) {
@@ -645,4 +645,45 @@ a:hover .zz-iconbrand {
     position: absolute;
     top: 0;
     width: calc(100% - 10px);
+}
+
+.ii-2 h2 {
+    display: block;
+    width: 165px;
+    margin: 0px 0px 5px;
+}
+
+#sw-content #icontent {
+    background: transparent !important;
+    padding: 0 !important;
+}
+
+#ipage {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#icontent {
+    display: block;
+    overflow: hidden;
+    padding: 0 0 24px 0;
+    text-align: center;
+    width: 100%;
+    flex: 1;
+}
+
+#icontent.icontent-tint {
+    background: #f3f3f3;
+    padding-bottom: 48px;
+}
+
+#icontent .icontent-tint {
+    background: #f3f3f3;
+    padding: 24px 0 48px;
+    width: 100%;
+}
+
+#icontent .icontent-tint:last-child {
+    margin-bottom: -24px;
 }
