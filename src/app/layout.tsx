@@ -6,6 +6,7 @@ import "./fonts.css";
 import "./dashboard.css";
 import "./idash.css";
 import "./icontent.css";
+import './css/dashboard_inner.css'
 import EmptyStars from "./components/EmptyStars"
 import NavigationMenu from "./components/navmenu";
 
